@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { useEffect, useRef, useState } from "react";
 
 const projects = [
@@ -97,12 +98,15 @@ export function ProjectGallery() {
               }`}
               style={{ transitionDelay: `${i * 80}ms` }}
             >
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img
-                src={project.src}
-                alt={project.title}
-                className="h-56 w-full object-cover transition-transform duration-700 group-hover:scale-105"
-              />
+              <div className="relative h-56 w-full overflow-hidden">
+                <Image
+                  src={project.src}
+                  alt={project.title}
+                  fill
+                  sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                  className="object-cover transition-transform duration-700 group-hover:scale-105"
+                />
+              </div>
               <div className="absolute inset-0 bg-gradient-to-t from-[#07070D]/90 via-[#07070D]/30 to-transparent" />
               <div className="absolute bottom-0 left-0 right-0 p-4">
                 <p className={`text-xs font-bold uppercase tracking-wider ${project.accent}`}>

@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { useEffect, useRef, useState } from "react";
 import { Badge } from "@/components/ui/badge";
 import { Cpu, Sun, Camera, Zap, LayoutGrid, ArrowRight } from "lucide-react";
@@ -147,12 +148,13 @@ export function ServicesBento() {
                 {/* Background image (subtle) */}
                 {svc.image && (
                   <>
-                    {/* eslint-disable-next-line @next/next/no-img-element */}
-                    <img
+                    <Image
                       src={svc.image}
                       alt=""
                       aria-hidden="true"
-                      className={`absolute inset-0 h-full w-full object-cover opacity-[0.07] transition-opacity duration-500 group-hover:opacity-[0.12] ${svc.large ? "" : "object-center"}`}
+                      fill
+                      sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                      className={`object-cover opacity-[0.07] transition-opacity duration-500 group-hover:opacity-[0.12] ${svc.large ? "" : "object-center"}`}
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-[#07070D]/90 via-[#07070D]/60 to-transparent" />
                   </>

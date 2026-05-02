@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import { Phone } from "lucide-react";
 import { PHONE_HREF, PHONE_NUMBER, WHATSAPP_HREF, EMAIL_HREF } from "@/lib/constants";
@@ -12,12 +13,14 @@ export function Hero() {
   return (
     <section className="relative flex min-h-[100vh] items-center overflow-hidden px-4 pb-32 pt-24">
       {/* Background image */}
-      {/* eslint-disable-next-line @next/next/no-img-element */}
-      <img
+      <Image
         src="/images/hero_bg.png"
         alt=""
         aria-hidden="true"
-        className="absolute inset-0 h-full w-full object-cover"
+        fill
+        priority
+        sizes="100vw"
+        className="object-cover"
       />
 
       {/* Dark overlays */}

@@ -28,15 +28,15 @@ const buttonVariants = cva(
     variants: {
       variant: {
         default:
-          "bg-accent-blue text-white shadow-[0_2px_12px_rgba(0,140,222,0.35),0_1px_2px_rgba(0,0,0,0.3),inset_0_1px_0_rgba(255,255,255,0.2)] hover:bg-accent-blue-hover hover:shadow-[0_4px_20px_rgba(0,140,222,0.5),0_2px_4px_rgba(0,0,0,0.3),inset_0_1px_0_rgba(255,255,255,0.25)] active:translate-y-[2px] active:shadow-[0_1px_4px_rgba(0,140,222,0.2)] focus-visible:ring-accent-blue",
+          "bg-[#0066AA] text-white shadow-[0_2px_12px_rgba(0,102,170,0.45),0_1px_2px_rgba(0,0,0,0.3),inset_0_1px_0_rgba(255,255,255,0.2)] hover:bg-[#0077BF] hover:shadow-[0_4px_20px_rgba(0,119,191,0.5),0_2px_4px_rgba(0,0,0,0.3),inset_0_1px_0_rgba(255,255,255,0.25)] active:translate-y-[2px] active:shadow-[0_1px_4px_rgba(0,102,170,0.3)] focus-visible:ring-[#0066AA]",
         secondary:
           "bg-brand-blue text-white shadow-[0_2px_12px_rgba(0,84,142,0.25),0_1px_2px_rgba(0,0,0,0.3),inset_0_1px_0_rgba(255,255,255,0.1)] hover:bg-[#1a6faf] hover:shadow-[0_4px_20px_rgba(0,84,142,0.35)] active:translate-y-[2px] focus-visible:ring-brand-blue",
         outline:
           "border border-border-default bg-transparent text-white shadow-[0_1px_2px_rgba(0,0,0,0.2)] hover:bg-white/[0.04] hover:border-border-hover focus-visible:ring-white/30",
         ghost:
-          "text-text-secondary hover:text-white hover:bg-white/[0.04]",
+          "text-[#A8AABB] hover:text-white hover:bg-white/[0.04]",
         whatsapp:
-          "bg-[#25D366] text-white shadow-[0_2px_12px_rgba(37,211,102,0.3),inset_0_1px_0_rgba(255,255,255,0.15)] hover:bg-[#22c55e] hover:shadow-[0_4px_20px_rgba(37,211,102,0.4)] active:translate-y-[2px] focus-visible:ring-[#25D366]",
+          "bg-[#1D7A3E] text-white shadow-[0_2px_12px_rgba(29,122,62,0.4),inset_0_1px_0_rgba(255,255,255,0.15)] hover:bg-[#186833] hover:shadow-[0_4px_20px_rgba(29,122,62,0.5)] active:translate-y-[2px] focus-visible:ring-[#1D7A3E]",
       },
       size: {
         default: "h-11 px-6 py-2",
